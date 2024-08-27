@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+
+.header{
+    background-image: url(images/KR\ Website\ Background.png);
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(211, 27, 211);
+    border: 1px solid white;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(247, 237, 237);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #002ec7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+   width: 90%;
+   text-align: center;
+   color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+}
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+    margin: 30px 0 60px;
+    font-size: 18px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+   border: 1px solid white;
+    background: white;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .header{
+        height: 50vh;
+         width: 100%;
+        background-position: center;
+    }
+
+    .nav-links{
+        font-size: 30px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .contact{
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .contact-us{
+        text-align: center;
+        margin-left: 40px;
+    }
+
+}
+
+.footer{
+    text-align: center;
+    width: 90%;
+    padding: 30px;
+}
+
+.footer h4{
+    margin-bottom: 20px;
+    margin-top: 90px;
+    font-weight: 600; 
+    font-size: 30px;
+    color: #000000;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.contact-us{
+    border: 1px solid  rgb(211, 27, 211);
+    width: 60%;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.contact{
+    border: 1px solid  rgb(211, 27, 211);
+    width: 60%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+.contact:hover{
+    width: 70%;
+    background: blue;
+    transition: 1s;
+}
+
+.contact-us:hover{
+    width: 70%;
+    background: blue;
+    transition: 1s;
+}

@@ -1,0 +1,273 @@
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background:  rgb(211, 27, 211);
+    border: 1px solid rgb(0, 23, 233);
+    
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #1700e2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+ }
+ .text-box h1{
+     font-size: 60px;
+ }
+ 
+ .text-box p{
+     margin: 30px 0 60px;
+     font-size: 18px;
+     color: white;
+ }
+ 
+ .hero-btn{
+     display: inline-block;
+     text-decoration: none;
+     color: black;
+     border: 1px solid white;
+     padding: 12px 34px;
+     font-size: 13px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+ }
+ 
+ .hero-btn:hover{
+    border: 1px solid white;
+     background: white;
+     transition: 1s;
+ }
+
+
+nav .fa{
+    display: none;
+}
+
+
+
+@media(max-width: 700px){
+
+.nav-links{
+    text-align: center;
+    font-size: 15px;
+}
+.nav-links ul li :hover{
+    border: 1px solid #ffffff;
+    background: blue;
+    transition: 1s;
+}
+nav{
+    width: 100%;
+    background:  rgb(211, 27, 211);
+    border: 1px solid rgb(0, 23, 233);
+}
+.prices{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 30px;
+ }
+ 
+ .prices p{
+     font-size: 30px;
+     
+ }
+ 
+ .pricing{
+     border: 1px solid #ccc; 
+     text-align: center;
+     font-size: 25px;
+     margin-left: 50px;
+     
+ }
+ 
+ .pricing:hover{
+     border: 1px solid white;
+     background: rgb(87, 140, 255);
+     transition: 1s; 
+ }
+
+ .Web-Design{
+    text-align: center;
+    padding: 30px;
+    margin-left: 30px;
+ }
+
+ .Web-Design h1{
+    font-size: 40px;
+    
+ }
+
+ .Web-Design p{
+   font-size: 25px;
+ }
+
+ .design{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 25px;
+    width: 80%;
+    padding: 30px;
+
+ }
+
+ .design:hover{
+    border: 1px solid white;
+    background: rgb(87, 140, 255);
+    transition: 1s;
+ }
+
+ .cta{
+    padding: 30px;
+    width: 80%;
+    background-image: linear-gradient(rgba(23, 221, 221, 0.322),rgba(0,0,0,0.7)), url(images/handshake.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600; 
+}
+}
+
+.prices{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+ 
+ }
+ 
+ .prices p{
+     font-size: 20px;
+ }
+ 
+ .pricing{
+     border: 1px solid #ccc; 
+     text-align: center;
+ }
+ 
+ .pricing:hover{
+     border: 1px solid white;
+     background: rgb(87, 140, 255);
+     transition: 1s; 
+ }
+
+ .Web-Design{
+    text-align: center;
+    padding: 30px;
+    margin-left: 30px;
+ }
+
+ .Web-Design h1{
+    font-size: 30px;
+    
+ }
+
+ .Web-Design p{
+   font-size: 20px;
+ }
+
+ .design{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    width: 100%;
+
+ }
+
+ .design:hover{
+    border: 1px solid white;
+    background: rgb(87, 140, 255);
+    transition: 1s;
+ }
+ 
+ .cta{
+    margin: 10%;
+    padding: 30px;
+    width: 80%;
+    background-image: linear-gradient(rgba(23, 221, 221, 0.322),rgba(0,0,0,0.7)), url(images/handshake.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h4{
+    margin: 25px;
+    font-weight: 600; 
+    font-size: 30px;
+}
+
+
+
